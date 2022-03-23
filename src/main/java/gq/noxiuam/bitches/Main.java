@@ -17,7 +17,10 @@ public class Main {
 
         // Gives me more bitches until the machine can't compute anymore
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
-            this.allMyBitches.add(new Bitch(faker.name().firstName(), "they/them", new Random().nextInt(30) + 18, Races.values()[new Random().nextInt(Races.values().length)]));
+            String name = faker.name().firstName();
+            if (name.equalsIgnoreCase("Allie")) continue;
+
+            this.allMyBitches.add(new Bitch(name, "they/them", new Random().nextInt(30) + 18, Races.values()[new Random().nextInt(Races.values().length)]));
             System.out.println("New Bitch: " + this.allMyBitches.get(i).getName());
         }
     }
