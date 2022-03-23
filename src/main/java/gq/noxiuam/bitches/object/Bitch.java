@@ -1,15 +1,17 @@
 package gq.noxiuam.bitches.object;
 
-import gq.noxiuam.bitches.object.data.Races;
+import gq.noxiuam.bitches.object.data.Gender;
+import gq.noxiuam.bitches.object.data.Race;
 import lombok.*;
 
 // Generic bitch
-@Getter @AllArgsConstructor
+@Getter @Setter
+@AllArgsConstructor @NoArgsConstructor
 public class Bitch {
     private String name;
-    private String pronouns;
 
     private int age;
 
-    private Races race;
+    private Race race;
+    private Gender gender;
 }
