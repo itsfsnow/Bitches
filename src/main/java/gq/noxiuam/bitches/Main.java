@@ -13,7 +13,7 @@ import java.util.*;
 
 public class Main {
 
-    // Make it public so I can get more bitches!
+    // Make it public so I can get more matches with bitches on Tinder!
     public final List<Bitch> allMyBitches = new ArrayList<>();
 
     @SneakyThrows
