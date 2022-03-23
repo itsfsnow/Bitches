@@ -22,6 +22,6 @@ public class Bitch {
         this.setName(new Faker().name().firstName());
         this.setAge(new Random().nextInt(30) + 18);
         this.setRace(Race.values()[new Random().nextInt(Race.values().length)]);
-        this.setGender(Gender.values()[new Random().nextInt(Race.values().length)]);
+        this.setGender(Gender.values()[new Random().nextInt(Gender.values().length)]);
     }
 }

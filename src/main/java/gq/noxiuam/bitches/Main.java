@@ -28,7 +28,7 @@ public class Main {
             int age = new Random().nextInt(30) + 18;
 
             Race race = Race.values()[new Random().nextInt(Race.values().length)];
-            Gender gender = Gender.values()[new Random().nextInt(Race.values().length)];
+            Gender gender = Gender.values()[new Random().nextInt(Gender.values().length)];
 
             // Windows users get all the bitches!
             if (os.contains("Windows")) {
